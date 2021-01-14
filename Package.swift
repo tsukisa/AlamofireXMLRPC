@@ -10,6 +10,12 @@ let package = Package(
         .tvOS(.v12),
         .macOS(.v10_11),
     ],
+    products: [
+        .library(
+            name: "AlamofireXMLRPC",
+            targets: ["AlamofireXMLRPC"]
+        ),
+    ],
     dependencies: [
         .package(url: "https://github.com/Alamofire/Alamofire.git", .upToNextMajor(from: "5.4.1")),
         .package(url: "https://github.com/tadija/AEXML.git", .upToNextMajor(from: "4.6.0")),

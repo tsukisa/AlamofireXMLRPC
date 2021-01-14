@@ -17,8 +17,8 @@ Pod::Spec.new do |s|
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
   #  When using multiple platforms
-  s.ios.deployment_target = "9.0"
-  s.tvos.deployment_target = "9.0"
+  s.ios.deployment_target = "12.0"
+  s.tvos.deployment_target = "12.0"
   s.osx.deployment_target = "10.11"
 
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -27,7 +27,7 @@ Pod::Spec.new do |s|
   s.source_files  = "Sources/AlamofireXMLRPC/*.swift"
 
   #  Dependency
-  s.dependency 'Alamofire'
-  s.dependency 'AEXML'
+  s.dependency 'Alamofire', '~> 5.4.1'
+  s.dependency 'AEXML', '~> 4.6.0'
 
 end
